@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent">
+
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/tourInfoMapSearchBar"
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:elevation="4dp"
+        android:layout_height="50dp"
+        android:background="@drawable/form"
+        map:iconifiedByDefault="false"
+        map:queryBackground="@android:color/transparent"
+        android:backgroundTint="@color/white"/>
+
+    <RelativeLayout
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:orientation="horizontal"
+        android:layout_marginStart="40dp"
+        android:elevation="4dp"
+        android:layout_marginEnd="40dp"
+        android:background="@drawable/form"
+        android:backgroundTint="@color/white">
+
+        <RelativeLayout
+            android:layout_marginStart="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true">
+
+            <ImageButton
+                android:id="@+id/tourInfoMapSendNotificationsButton"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="20dp"
+                android:background="@drawable/form"
+                android:backgroundTint="@color/white"
+                android:src="@drawable/ic_alarm" />
+            <TextView
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tourInfoMapSendNotificationsButton"
+                android:fontFamily="@font/quicksand"
+                android:text="@string/sendNotifications"/>
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true">
+
+            <ImageButton
+                android:id="@+id/tourInfoMapSendVoiceRecorderButton"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="20dp"
+                android:background="@drawable/form"
+                android:backgroundTint="@color/white"
+                android:src="@drawable/ic_microphone" />
+            <TextView
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tourInfoMapSendVoiceRecorderButton"
+                android:fontFamily="@font/quicksand"
+                android:text="@string/voiceRecord"/>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_marginEnd="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true">
+
+            <ImageButton
+                android:id="@+id/tourInfoMapCurrentLocationButton"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="20dp"
+                android:background="@drawable/form"
+                android:backgroundTint="@color/white"
+                android:src="@drawable/ic_placeholder" />
+            <TextView
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tourInfoMapCurrentLocationButton"
+                android:fontFamily="@font/quicksand"
+                android:text="@string/currentPosition"/>
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+    <fragment
+        android:id="@+id/tourInfoMap"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</RelativeLayout>

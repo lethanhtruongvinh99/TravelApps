@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#0D86D0</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#000000</color>
+    <color name="buttonColor">#F6CB5A</color>
+    <color name="textColor">#000000</color>
+    <color name="linkColor">#2390A6</color>
+    <color name="blueAccent">#164353</color>
+    <color name="yellowAccent">#F6CB5A</color>
+    <color name="purpleRedAccent">#C23B22</color>
+    <color name = "background">#FFFFFF</color>
+    <color name="black_alpha_40">#66000000</color>
+    <color name="form">#F2F2F2</color>
+    <color name="white">#FFFFFF</color>
+    <color name="cardTitle">#FFFA80</color>
+    <color name="cardBackground">#F7CE65</color>
+    <color name="adultCountBg">#BDF392</color>
+    <color name="childrenCountBg">#B7E0CA</color>
+    <color name="confirm">#54AF2A</color>
+    <color name="bg">#dddddd</color>
+</resources>
